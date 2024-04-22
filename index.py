@@ -1,4 +1,8 @@
-import pygame
+try:
+    import pygame
+except Exception as e:
+    print("Pygame is not installed! Make sure you install pygame")
+    return
 import FontLoader as font
 import animation.Animation as Animation
 import Button
